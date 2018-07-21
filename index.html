@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>hello Underscore.js!</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1 class="heading heading__underLine">hello Underscore.js!</h1>
+
+  <ul id="hoge">
+  </ul>
+  <script type="text/template" id="template">
+    <% console.log(data) %>
+    <% data.forEach(function(index){ %>
+    <li class="card card--horizon">
+      <div class="card__body">
+        <p class="card__ttl"><%= index.name %></p>
+        <dl class="card__info">
+          <dt>email</dt>
+          <dd><%= index.email %></dd>
+          <dt>occupations</dt>
+          <dd><%= index.occupations %></dd>
+          <dt>birth</dt>
+          <dd><%= index.birth %></dd>
+        </dl>
+        <p><%= index.introduction %></p>
+      </div>
+      <figure class="card__thumb">
+        <img src="http://placehold.jp/150x150.png?text=<%- index.name %>" alt="<%- index.name %>">
+      </figure>
+    </li>
+    <% }); %>
+  </script>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>

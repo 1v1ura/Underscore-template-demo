@@ -1,0 +1,9 @@
+{
+  "name": "underscore-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "dummy-json": "^2.0.0"
+  }
+}

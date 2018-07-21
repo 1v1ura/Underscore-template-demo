@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+img {
+  vert-align: bottom; }
+
+.wrap {
+  width: 960px;
+  margin: 0 auto; }
+
+.heading.heading__underLine {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ccc; }
+
+#hoge {
+  margin: 20px 0; }
+
+.card {
+  display: flex;
+  list-style: none; }
+  .card .card__ttl {
+    font-size: 26px;
+    margin-bottom: 10px; }
+  .card .card__info {
+    margin-bottom: 10px; }
+    .card .card__info > dt {
+      float: left; }
+      .card .card__info > dt::after {
+        content: ":";
+        display: inline-block;
+        margin-right: 1em; }
+    .card .card__info > dt,
+    .card .card__info > dd {
+      overflow: hidden; }
+  .card.card--horizon {
+    flex-flow: row wrap; }
+    .card.card--horizon + .card--horizon {
+      margin-top: 30px; }
+    .card.card--horizon .card__body {
+      flex: 0 0 calc(100% - (150px + 30px));
+      order: 2; }
+      .card.card--horizon .card__body > *:last-child {
+        margin-bottom: 0; }
+    .card.card--horizon .card__thumb {
+      flex: 0 0 150px;
+      margin-right: 30px;
+      order: 1; }
+
+/*# sourceMappingURL=style.css.map */
